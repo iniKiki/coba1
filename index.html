@@ -148,6 +148,8 @@
     // Mulai saat halaman terbuka
     window.onload = function() {
       const audio = new Audio('musik/happy-birthday.mp3');
+        <audio id="myAudio" src="musik/happy-birthday.mp3" controls></audio>
+        <button onclick="document.getElementById('myAudio').play()">Putar</button>
       audio.volume = 0.5; // Set volume 50%
       audio.play().catch(e => {
         // Jika autoplay diblokir, mulai saat user klik
